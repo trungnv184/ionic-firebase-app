@@ -13,7 +13,14 @@
 </ion-header>
 
 <ion-content padding>
+  <h2 text-center>Single item</h2>
   <button ion-button block color="secondary" outline (click)="addNewItem()">Add Item</button>
   <button ion-button block color="secondary" (click)="updateItem()">Update Item</button>
   <button ion-button block color="danger" (click)="deleteItem()">Delete Item</button>
+
+  <h2 padding-top text-center>List item</h2>
+
+  <button ion-button block color="secondary" outline (click)="addItemList()">Add Item List</button>
+  <button ion-button block color="secondary" (click)="updateItemList()">Update Item List</button>
+  <button ion-button block color="danger" (click)="deleteList()">Delete Item List</button>
 </ion-content>
