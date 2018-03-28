@@ -1,14 +1,19 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Music App
     </ion-title>
+
+    <ion-buttons end>
+      <button (click)="addNewItem()">
+        <ion-icon name="add"></ion-icon>
+      </button>
+    </ion-buttons>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <button ion-button block color="secondary" outline (click)="addNewItem()">Add Item</button>
+  <button ion-button block color="secondary" (click)="updateItem()">Update Item</button>
+  <button ion-button block color="danger" (click)="deleteItem()">Delete Item</button>
 </ion-content>
